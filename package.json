@@ -1,0 +1,37 @@
+{
+  "name": "nodejs-bootstrap",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "lint": "eslint src/**/*.ts",
+    "format": "eslint src/**/*.ts --fix",
+    "build": "tsc",
+    "run": "ts-node src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiromaily/nodejs-bootstrap.git"
+  },
+  "author": "hiromaily",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hiromaily/nodejs-bootstrap/issues"
+  },
+  "homepage": "https://github.com/hiromaily/nodejs-bootstrap#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "eslint": "^8.33.0",
+    "husky": "^8.0.3",
+    "npm-check-updates": "^16.7.4",
+    "prettier": "^2.8.4",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  }
+}
